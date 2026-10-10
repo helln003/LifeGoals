@@ -1,0 +1,18 @@
+.contenido {
+  display: flex;
+  gap: 60px;
+  padding: 25px 30px;
+}
+
+.columna-izquierda input {
+  width: 260px;
+}
+
+.tarjeta-meta {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  width: 300px;
+  border-left: 5px solid #f4c430;
+}

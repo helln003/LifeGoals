@@ -1,0 +1,16 @@
+<div class="contenido">
+  <div class="columna-izquierda">
+    <h3>Usa este formulario para agregar una nueva meta de vida</h3>
+    <input type="text" [(ngModel)]="nuevaMeta" placeholder="explorar el espacio" />
+    <br /><br />
+    <button (click)="agregarMeta()">agregar meta</button>
+  </div>
+
+  <div class="columna-derecha">
+    <h3>Tienes en tu lista: ({{ metas.length }})</h3>
+    <div class="tarjeta-meta" *ngFor="let m of metas">
+      <button (click)="eliminarMeta(m.id)">Borrar</button>
+      <p>{{ m.meta }}</p>
+    </div>
+  </div>
+</div>
